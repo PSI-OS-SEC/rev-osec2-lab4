@@ -39,5 +39,12 @@ date > SHA256.txt
 ./lab5.sh lab |tee -a ${CARNET}-lab5-sec3.txt && sha256sum ${CARNET}-lab5-sec3.txt >> SHA256.txt
 
 ```
+
+Para crer archivo empaquetado:
+
+```
+tar -cvzf ${CARNET}-lab5.tgz *.txt
+```
+
 Subir al GES CARNET-lab5.tgz
 
