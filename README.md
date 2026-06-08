@@ -20,7 +20,7 @@
 ./lab5.sh lab
 ```
 
-### Obterner información de las replicas
+### Obterner información de las replicas (NO APLICA PARA ESTA CALIFICACION)
 
 
 ```sh
