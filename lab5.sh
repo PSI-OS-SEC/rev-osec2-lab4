@@ -101,6 +101,19 @@ else
   show_result 1 "Expiration psi01"
 fi
 
+echo "Domain info"
+ipa dnszone-find | grep 'Zone name'|grep testlabs.info
+test $? -eq 0 && show_result 0 "Domain" ||  show_result 1 "Domain"
+
+
+echo "Clients - joined"
+ipa host-find | grep 'Host name'
+CLIENTS=$(ipa host-find | grep 'Host name')
+C_CLIENTS=$(echo "${CLIENTS}" | wc -l)
+test ${C_CLIENTS} -gt 1 &&  show_result 0 "Joined Clients" ||  show_result 1 "Joined Clients"
+
+
+
 echo "Get users from Guatemala in psiadmins"
 ipa user-find --in-groups=psiadmins --city=Guatemala
 
@@ -124,3 +137,5 @@ case "$1" in
     echo "Uso: $0 lab|accounts|replica"
     ;;
 esac
+
+
