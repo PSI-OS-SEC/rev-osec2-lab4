@@ -39,13 +39,6 @@ date > SHA256.txt
 ./lab5.sh accounts all |tee -a ${CARNET}-lab5-sec2.txt && sha256sum ${CARNET}-lab5-sec2.txt >> SHA256.txt
 ./lab5.sh lab |tee -a ${CARNET}-lab5-sec3.txt && sha256sum ${CARNET}-lab5-sec3.txt >> SHA256.txt
 
-read -p "Realice el procedimiento de agregar la replica. PRESIONE ENTER (para calificar sec4) " PAUSE
-
-./lab5.sh replica |tee -a ${CARNET}-lab5-sec4.txt && sha256sum ${CARNET}-lab5-sec4.txt >> SHA256.txt
-
-
-tar -cvzf ${CARNET}-lab5.tgz SHA256.txt ${CARNET}*
-sha256sum ${CARNET}-lab5.tgz
 ```
 Subir al GES CARNET-lab5.tgz
 
