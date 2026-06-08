@@ -2,10 +2,10 @@
 
 ## Requisitos
 
-- Debe contar con un ambientes de acuerdo al LAB#5
+- Debe contar con un ambientes de acuerdo al LAB#4
 - Este script debe ejecutarse en algun servidor de IPA (debe instalar git)  
 - Debe estar autenticado a Kerberos ```kinit admin```
-- Ha sido validado en RHEL 9.x
+- Ha sido validado en RHEL 9.x/10.x
 
 ## USO:
 
