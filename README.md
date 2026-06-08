@@ -35,7 +35,6 @@ Ejecutar:
 ```
 CARNET=111111
 date > SHA256.txt
-./lab5.sh replica |tee -a ${CARNET}-lab5-sec1.txt &&  sha256sum ${CARNET}-lab5-sec1.txt >> SHA256.txt
 ./lab5.sh accounts all |tee -a ${CARNET}-lab5-sec2.txt && sha256sum ${CARNET}-lab5-sec2.txt >> SHA256.txt
 ./lab5.sh lab |tee -a ${CARNET}-lab5-sec3.txt && sha256sum ${CARNET}-lab5-sec3.txt >> SHA256.txt
 
